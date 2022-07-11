@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div id="myNav" class="overlay">
+        <a class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#" href="./index.html">Main Page</a>
+          <a href="#" class="ankor">Action (A)</a>
+          <a href="#" class="ankor">Action (B)</a>
+          <a href="#" class="ankor">Animal (A)</a>
+          <a href="#" class="ankor">Animal (B)</a>
+          <a href="#" class="ankor">Clothes</a>
+          <a href="#" class="ankor">Emotions</a>
+          <a href="#" class="ankor">Weather</a>
+          <a href="#" class="ankor">Transportation</a>
+          <a href="#">Statistic</a>
+        </div>
+      </div>
+     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+    </header>
+    <main id="main-container"></main>
+    <script>
+      function openNav() {
+  document.getElementById("myNav").style.width = "20%";
+  }
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+  }
+
+    </script>
+<script type="module" src="../scripts/import.js"></script>
+  </body>
+</html>
